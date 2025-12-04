@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script src="auth.js"></script>
+</head>
+
+<body>
+  <button onclick="logoutUser()" class="logout">Logout</button>
+
+  <div class="container">
+    <h1>Perkiraan Cuaca</h1>
+
+    <input type="text" id="cityInput" placeholder="Masukkan nama kota...">
+    <button id="searchBtn">Cari</button>
+
+    <h2 id="cityName"></h2>
+    <h3 id="temp"></h3>
+    <p id="desc"></p>
+  </div>
+
+<script src="app.js"></script>
+</body>
+</html>
